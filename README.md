@@ -89,9 +89,12 @@ def run_test(self):
   self.log.info("Successfully double spend the 50 BTCs.")
 ```
 
-
-
-
+### Usage Notes : 
+ - It Directly Work with :  https://github.com/bitcoin/bitcoin/tree/master/test/functional/test_framework
+ - Move The PoC To the Folder Containg the Bitcoin Soursecode
+ - Version Bitcoin < 0.16.2
+ - Don't Use It for maliciously Activity
+ 
 
 
 
