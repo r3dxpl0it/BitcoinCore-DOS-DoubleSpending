@@ -25,7 +25,7 @@ bool CheckTransaction(const CTransaction& tx, CValidationState &state, bool Chec
 ```
 ####  CheckTransaction() function
 The CheckTransaction() function detects incoming transaction messages (CTransaction&tx), where
-This includes detecting whether a transaction has a double flower. The detection scheme is very simple and will compare this to all Coin used in the transaction.
+This includes detecting whether a transaction has a double Spending. The detection scheme is very simple and will compare this to all Coin used in the transaction.
 (Ttex.prevout in the code, which represents UTXO in Bitcoin transactions. This article is followed by the word Coin.
 Representation, in order to be consistent with the code), is recorded in std::set, if it is found that a record is repeatedly recorded twice, it will return
 Back to the failed message (state.DoS), this message will eventually be fed back to the sender of the block through the P2P channel.
